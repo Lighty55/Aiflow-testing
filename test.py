@@ -20,7 +20,7 @@ with DAG(
         print("Testing Airflow flow")
 
     example_read = PythonOperator(
-        task_id='example_read',
+        task_id='example',
         python_callable=hdfs_example,
     )
     example_read.doc_md = dedent(
