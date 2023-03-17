@@ -1,4 +1,3 @@
-from pyspark.sql import SparkSession
 from textwrap import dedent
 import pendulum
 from airflow import DAG
