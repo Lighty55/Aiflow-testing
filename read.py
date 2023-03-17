@@ -18,7 +18,7 @@ with DAG(
 
     def hdfs_example(**kwargs):
         spark = SparkSession.builder.appName("PySpark Example - Read Parquet").getOrCreate()
-        spark.read.parquet("hdfs://namenode:9000/user/hadoop/example1").show()
+        spark.read.parquet("hdfs://172.16.50.201:9000/kafka/topics/abc").show()
 
     example_read = PythonOperator(
         task_id='example_read',
