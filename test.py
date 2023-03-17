@@ -5,7 +5,7 @@ from airflow.operators.python import PythonOperator
 
 
 with DAG(
-    'dag_example_read',
+    'test-airflow-flow',
     default_args={'retries': 0},
     description="example",
     schedule_interval=None,
